@@ -1,23 +1,49 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
+		"dates": "September 2022 - Present",
+		"role": "Founder and CEO",
+		"company": "Green Beacon Organisation",
+		"description": [
+			""
+		]
 	},
-	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
-	},
-	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
-	}
+  {
+    "dates": "February 2022 - July 2022",
+    "role": "Concierge and Sales Officer",
+    "company": "Vodafone Ghana Limited",
+    "description": [
+      "• Addressed customer inquiries with timely and professional responses via phone, email and in-person interactions.",
+      "• Remedied issues quickly and effectively through active listening, conflict resolution, and dynamic communication skills.",
+      "• Tracked customer service cases, maintained accurate records and updated service software with customer information, scheduled customer appointments and customer complaints",
+      "• Preparing cost- benefit analysis for prospective and existing customers to determine most suitable purchase options.",
+      "• Followed up with customers about resolved issues to maintain high standards of customer service.",
+      "• Collaborated with staff members and other departments to enhance customer service experience and exceed team goals through effective client satisfaction rates."
+    ]
+  },
+  {
+    "dates": "October 2020 - September 2021",
+    "role": "Assistant Production Officer",
+    "company": "Dangote Cement Plc",
+    "description": [
+      "• Assisted inspecting officers in verifying that appropriate loaders loaded sound cement bags and precise number of cements required by appropriate clients.",
+      "• Supervised workers in cleaning of loading bay, recycling bay and ensured that powdered cements in vessels were dispatched quickly from port to respective silos of the company",
+      "• Assisted shift supervisors in rotation of loaders respective shifts to ensure smooth flow of work and handling of production paper works",
+      "• Ensured that personal protective equipment were provided to workers in the plant to avoid harmful risks.",
+      "• Proved successful working within tight deadlines and a fast-paced environment.",
+      "• Paid attention to detail while completing assignments.",
+      "• Prepared in advance for and addressed production problems to prevent avoidable delays in delivery of products to customers."
+    ]
+  },
+  {
+    "dates": "June 2019 - August 2019",
+    "role": "Administrative Officer",
+    "company": "Nestle Ghana Limited",
+    "description": [
+      "• Assisted in handling budget, office reporting, invoicing and providing top-notch customer service.",
+      "• Updated reports, managed accounts and inventories, and generated reports for company database.",
+      "• Communicated corporate objectives to various divisions to meet deadlines and adhere to company budgets.",
+      "• Answered multi-line phone system, routing calls, delivering messages to staff and greeting visitors.",
+      "• Scheduled office meetings and client appointments for staff teams."
+    ]
+  }
 ]

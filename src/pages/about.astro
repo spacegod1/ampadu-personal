@@ -1,24 +1,32 @@
 ---
 import experiences from "../collections/experiences.json";
 import AboutExperience from "../components/about-experience.astro";
+import education from "../collections/education.json";
+import EducationalExperience from "../components/educational-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
 ---
 
 <Layout title="About Me">
-  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0 text-justify">
     <PageHeading
       title="About Me"
-      description="Hello 👋 I'm a frontend engineer from Nanjing, China. I'm passionate about building new products and learning new technology."
+      description="Hello 👋 I'm Edmund Ampadu, a Ghanaian, born in the year 1997 and raised in Tema, Accra. I am a creative business thinker and an educational activist who is actively engaged in the projections of strategies and also utilizes these strategies to effect justice-oriented change. As of now, I am the founder of Green Beacon Organization with the main aim to help the youth improve access to quality education, impact lives with public education and to help the youth realize and revive their hidden talents."
     />
 
-    <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+    <img src="/assets/images/red.jpg" class="relative z-30 w-full my-10 rounded-xl" />
 
-    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Summary</h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      Front-end cutter 🧑🏻‍💻, back-end amateur 🤷🏻‍♂️, operations digging holes person 🤦🏻‍♂️.
+    I'm a result-driven professional focused on delivering exceptional support for customer needs and successfully manages concerns and resolves conflicts to maximize customer satisfaction. I'm a detail-oriented team player with strong organizational skills. Ability to handle multiple projects simultaneously with a high degree of accuracy.To seek and maintain full-time position that offers professional challenges utilizing interpersonal skills, excellent time management and problem-solving skills.
+    </p>
+    <h2 class="mt-5 mb-2 text-2xl font-bold dark:text-neutral-200">Philosophy</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+    My work philosophy is to be inventive in all that I accomplish for an organization. Regardless of whether my work isn't especially innovative, I attempt to give remarkable answers for complex work environment issues. I like to help lead teams toward various solutions as opposed to depending on rehashed strategies while finishing a project. I likewise function admirably in groups since conceptualizing thoughts and arrangements with others permits me to move toward my work with an inventive outlook. While I can work independently as well, working on a team helps me discover new ideas and develop unique answers to various challenges."
     </p>
 
     <h2
@@ -38,7 +46,6 @@ import Layout from "../layouts/main.astro";
                     role={experience.role}
                     company={experience.company}
                     description={experience.description}
-                    logo={experience.logo}
                   />
                 </div>
               ) : (
@@ -47,7 +54,6 @@ import Layout from "../layouts/main.astro";
                   role={experience.role}
                   company={experience.company}
                   description={experience.description}
-                  logo={experience.logo}
                 />
               )}
             </>
@@ -56,15 +62,47 @@ import Layout from "../layouts/main.astro";
       }
     </div>
 
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Education
+    </h2>
+    <div class="px-5 py-10">
+      {
+        education.map((experience, loop) => {
+          return (
+            <>
+              {loop == 0 || loop == 1 ? (
+                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                  <EducationalExperience
+                    graduation={experience.graduation}
+                    certificate={experience.certificate}
+                    school={experience.school}
+                  />
+                </div>
+              ) : (
+                <EducationalExperience
+                  graduation={experience.graduation}
+                  certificate={experience.certificate}
+                  school={experience.school}
+                />
+              )}
+            </>
+          )
+        })
+      }
+    </div>
+
+
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect</h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
       If you want to stay up to date with my work be sure to <a
-        href="https://twitter.com/ccikai"
+        href="https://wa.me/+233553187548"
         target="_blank"
-        class="text-indigo-600 underline">follow me on twitter</a
-      >, or you can send me an <a href="mailto:astro-aria#miantiao.me" class="text-indigo-600 underline"
+        class="text-indigo-600 underline">let's chat on WhatsApp</a
+      >, or you can send me an <a href="mailto:eampadu9@gmail.com" class="text-indigo-600 underline"
         >email</a
       > and I'll be sure to get back to you.
     </p>
